@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace QuanLySanPhamTheThao
 {
@@ -95,44 +96,58 @@ namespace QuanLySanPhamTheThao
 
         private void btnTimGia_Click(object sender, EventArgs e)
         {
-            for (i = 0; i < n; i++)
-                lsvSanPham.Items[i].BackColor = Color.White;
-                
-            float giaTim;
-            bool timThay = false;
-            giaTim = float.Parse(txtTimGia.Text);
+            
+            if (String.IsNullOrEmpty(txtTimGia.Text))
+                MessageBox.Show("Vui lòng nhập giá vào ô tìm kiếm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else
+            {
+                float giaTim;
+                bool timThay = false;
+                giaTim = float.Parse(txtTimGia.Text);
 
-            for (i=0; i<n;i++)
-                if (DSSP[i].donGia == giaTim)
-                {
-                    timThay = true;
-                    lsvSanPham.Items[i].BackColor = Color.Red;
-                }
-            if (timThay == false)
-                MessageBox.Show("Không tìm thấy Giá: " + giaTim.ToString(), "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                for (i = 0; i < n; i++)
+                    lsvSanPham.Items[i].BackColor = Color.White;
+
+                for (i = 0; i < n; i++)
+                    if (DSSP[i].donGia == giaTim)
+                    {
+                        timThay = true;
+                        lsvSanPham.Items[i].BackColor = Color.Green;
+                    }
+                if (timThay == false)
+                    MessageBox.Show("Không tìm thấy sản phẩm có Giá: " + giaTim.ToString(), "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            txtTimGia.Clear();
+            txtTimGia.Focus();
 
         }
 
         private void btnTimTen_Click(object sender, EventArgs e)
         {
-            for (i = 0; i < n; i++)
-                lsvSanPham.Items[i].BackColor = Color.White;
 
-            string tenTim;
-            bool timThay = false;
-            tenTim = txtTimTen.Text;
 
-            for (i = 0; i < n; i++)
-                lsvSanPham.Items[i].BackColor = Color.White;
+            if (String.IsNullOrEmpty(txtTimTen.Text))
+                MessageBox.Show("Vui lòng nhập tên sản phẩm vào ô tìm kiếm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else
+            {
+                string tenTim;
+                bool timThay = false;
+                tenTim = txtTimTen.Text;
 
-            for (i = 0; i < n; i++)
-                if (DSSP[i].tenSp == tenTim)
-                {
-                    timThay = true;
-                    lsvSanPham.Items[i].BackColor = Color.Red;
-                }
-            if (timThay == false)
-                MessageBox.Show("Không tìm thấy Giá: " + tenTim.ToString(), "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                for (i = 0; i < n; i++)
+                    lsvSanPham.Items[i].BackColor = Color.White;
+
+                for (i = 0; i < n; i++)
+                    if (DSSP[i].tenSp.Contains(tenTim))
+                    {
+                        timThay = true;
+                        lsvSanPham.Items[i].BackColor = Color.Red;
+                    }
+                if (timThay == false)
+                    MessageBox.Show("Không tìm thấy sản phẩm có tên: " + tenTim.ToString(), "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            txtTimTen.Clear();
+            txtTimGia.Focus();
         }
 
         private void btnGiaMax_Click(object sender, EventArgs e)
@@ -146,10 +161,7 @@ namespace QuanLySanPhamTheThao
             for (i = 0; i < n; i++)
                 if (giaMax < DSSP[i].donGia)
                     giaMax = DSSP[i].donGia;
-
-            for (i = 0; i < n; i++)
-                if (giaMax == DSSP[i].donGia)
-                    lsvSanPham.Items[i].BackColor = Color.Red;
+            MessageBox.Show("Số lớn nhất là: " + giaMax.ToString(), "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btnGiaMin_Click(object sender, EventArgs e)
@@ -164,9 +176,99 @@ namespace QuanLySanPhamTheThao
                 if (giaMin > DSSP[i].donGia)
                     giaMin = DSSP[i].donGia;
 
+            MessageBox.Show("Số nhỏ nhất là: " + giaMin.ToString(), "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btnTangAZ_Click(object sender, EventArgs e)
+        {
+            SANPHAM tam;
             for (i = 0; i < n; i++)
-                if (giaMin == DSSP[i].donGia)
-                    lsvSanPham.Items[i].BackColor = Color.Red;
+                for (int k = i + 1; k < n; k++)
+                    if (String.Compare(DSSP[i].tenSp, DSSP[k].tenSp) > 0 )
+                    {
+                        tam = DSSP[i];
+                        DSSP[i] = DSSP[k];
+                        DSSP[k] = tam;
+                    }
+            lsvSanPham.Items.Clear();
+            for (i = 0; i < n; i++)
+            {
+                ListViewItem item = new ListViewItem((i + 1).ToString());
+                item.SubItems.Add(DSSP[i].maSp);
+                item.SubItems.Add(DSSP[i].tenSp);
+                item.SubItems.Add(DSSP[i].soLuong.ToString());
+                item.SubItems.Add(DSSP[i].donGia.ToString());
+                lsvSanPham.Items.Add(item);
+            }
+        }
+
+        private void btnGiamAZ_Click(object sender, EventArgs e)
+        {
+            SANPHAM tam;
+            for (i = 0; i < n; i++)
+                for (int k = i + 1; k < n; k++)
+                    if (String.Compare(DSSP[i].tenSp, DSSP[k].tenSp) < 0)
+                    {
+                        tam = DSSP[i];
+                        DSSP[i] = DSSP[k];
+                        DSSP[k] = tam;
+                    }
+            lsvSanPham.Items.Clear();
+            for (i = 0; i < n; i++)
+            {
+                ListViewItem item = new ListViewItem((i + 1).ToString());
+                item.SubItems.Add(DSSP[i].maSp);
+                item.SubItems.Add(DSSP[i].tenSp);
+                item.SubItems.Add(DSSP[i].soLuong.ToString());
+                item.SubItems.Add(DSSP[i].donGia.ToString());
+                lsvSanPham.Items.Add(item);
+            }
+        }
+
+        private void btnGiaTang_Click(object sender, EventArgs e)
+        {
+            SANPHAM tam;
+            for(i=0; i<n; i++)
+                for(int k=i+1; k<n; k++)
+                    if (DSSP[i].donGia > DSSP[k].donGia)
+                    {
+                        tam = DSSP[i];
+                        DSSP[i] = DSSP[k];
+                        DSSP[k] = tam;
+                    }
+            lsvSanPham.Items.Clear();
+            for (i = 0; i<n; i++)
+            {
+                ListViewItem item = new ListViewItem((i + 1).ToString());
+                item.SubItems.Add(DSSP[i].maSp);
+                item.SubItems.Add(DSSP[i].tenSp);
+                item.SubItems.Add(DSSP[i].soLuong.ToString());
+                item.SubItems.Add(DSSP[i].donGia.ToString());
+                lsvSanPham.Items.Add(item);
+            }    
+        }
+
+        private void btnGiaGiam_Click(object sender, EventArgs e)
+        {
+            SANPHAM tam;
+            for (i = 0; i < n; i++)
+                for (int k = i + 1; k < n; k++)
+                    if (DSSP[i].donGia < DSSP[k].donGia)
+                    {
+                        tam = DSSP[i];
+                        DSSP[i] = DSSP[k];
+                        DSSP[k] = tam;
+                    }
+            lsvSanPham.Items.Clear();
+            for (i = 0; i < n; i++)
+            {
+                ListViewItem item = new ListViewItem((i + 1).ToString());
+                item.SubItems.Add(DSSP[i].maSp);
+                item.SubItems.Add(DSSP[i].tenSp);
+                item.SubItems.Add(DSSP[i].soLuong.ToString());
+                item.SubItems.Add(DSSP[i].donGia.ToString());
+                lsvSanPham.Items.Add(item);
+            }
         }
 
         private void btnNhap_Click(object sender, EventArgs e)
