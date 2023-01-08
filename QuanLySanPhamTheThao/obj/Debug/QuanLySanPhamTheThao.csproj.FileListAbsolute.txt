@@ -1,0 +1,11 @@
+D:\c#\QuanLySanPhamTheThao\QuanLySanPhamTheThao\bin\Debug\QuanLySanPhamTheThao.exe.config
+D:\c#\QuanLySanPhamTheThao\QuanLySanPhamTheThao\bin\Debug\QuanLySanPhamTheThao.exe
+D:\c#\QuanLySanPhamTheThao\QuanLySanPhamTheThao\bin\Debug\QuanLySanPhamTheThao.pdb
+D:\c#\QuanLySanPhamTheThao\QuanLySanPhamTheThao\obj\Debug\QuanLySanPhamTheThao.csproj.AssemblyReference.cache
+D:\c#\QuanLySanPhamTheThao\QuanLySanPhamTheThao\obj\Debug\QuanLySanPhamTheThao.csproj.SuggestedBindingRedirects.cache
+D:\c#\QuanLySanPhamTheThao\QuanLySanPhamTheThao\obj\Debug\QuanLySanPhamTheThao.Form1.resources
+D:\c#\QuanLySanPhamTheThao\QuanLySanPhamTheThao\obj\Debug\QuanLySanPhamTheThao.Properties.Resources.resources
+D:\c#\QuanLySanPhamTheThao\QuanLySanPhamTheThao\obj\Debug\QuanLySanPhamTheThao.csproj.GenerateResource.cache
+D:\c#\QuanLySanPhamTheThao\QuanLySanPhamTheThao\obj\Debug\QuanLySanPhamTheThao.csproj.CoreCompileInputs.cache
+D:\c#\QuanLySanPhamTheThao\QuanLySanPhamTheThao\obj\Debug\QuanLySanPhamTheThao.exe
+D:\c#\QuanLySanPhamTheThao\QuanLySanPhamTheThao\obj\Debug\QuanLySanPhamTheThao.pdb
