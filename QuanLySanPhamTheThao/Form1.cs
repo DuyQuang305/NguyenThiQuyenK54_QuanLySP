@@ -271,6 +271,12 @@ namespace QuanLySanPhamTheThao
             }
         }
 
+        private void btnHuyTim_Click(object sender, EventArgs e)
+        {
+            for (i = 0; i < n; i++)
+                lsvSanPham.Items[i].BackColor = Color.White;
+        }
+
         private void btnNhap_Click(object sender, EventArgs e)
         {
             if (txtMaSp.Text == "" || txtTenSp.Text == "" || txtSlSp.Text == "" || txtGiaSp.Text == "")

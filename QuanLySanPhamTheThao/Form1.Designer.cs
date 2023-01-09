@@ -31,6 +31,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.txtTimGia = new System.Windows.Forms.TextBox();
             this.btnTimGia = new System.Windows.Forms.Button();
@@ -43,7 +45,6 @@
             this.txtTenSp = new System.Windows.Forms.TextBox();
             this.txtMaSp = new System.Windows.Forms.TextBox();
             this.btnGiamAZ = new System.Windows.Forms.Button();
-            this.btnTangAZ = new System.Windows.Forms.Button();
             this.btnGiaMin = new System.Windows.Forms.Button();
             this.btnGiaMax = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
@@ -53,6 +54,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnTangAZ = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lsvSanPham = new System.Windows.Forms.ListView();
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -60,8 +62,7 @@
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -87,6 +88,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.label7);
@@ -118,6 +120,26 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(29, 327);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(165, 43);
+            this.button2.TabIndex = 23;
+            this.button2.Text = "GiaGiam";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.btnGiaGiam_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(205, 327);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(172, 41);
+            this.button1.TabIndex = 22;
+            this.button1.Text = "GiaTang";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.btnGiaTang_Click);
             // 
             // label7
             // 
@@ -223,17 +245,6 @@
             this.btnGiamAZ.UseVisualStyleBackColor = true;
             this.btnGiamAZ.Click += new System.EventHandler(this.btnGiamAZ_Click);
             // 
-            // btnTangAZ
-            // 
-            this.btnTangAZ.Location = new System.Drawing.Point(386, 325);
-            this.btnTangAZ.Name = "btnTangAZ";
-            this.btnTangAZ.Size = new System.Drawing.Size(172, 43);
-            this.btnTangAZ.TabIndex = 9;
-            this.btnTangAZ.Tag = "";
-            this.btnTangAZ.Text = "TangAZ";
-            this.btnTangAZ.UseVisualStyleBackColor = true;
-            this.btnTangAZ.Click += new System.EventHandler(this.btnTangAZ_Click);
-            // 
             // btnGiaMin
             // 
             this.btnGiaMin.Location = new System.Drawing.Point(205, 384);
@@ -326,6 +337,17 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Mã sản phẩm";
             // 
+            // btnTangAZ
+            // 
+            this.btnTangAZ.Location = new System.Drawing.Point(386, 325);
+            this.btnTangAZ.Name = "btnTangAZ";
+            this.btnTangAZ.Size = new System.Drawing.Size(172, 43);
+            this.btnTangAZ.TabIndex = 9;
+            this.btnTangAZ.Tag = "";
+            this.btnTangAZ.Text = "TangAZ";
+            this.btnTangAZ.UseVisualStyleBackColor = true;
+            this.btnTangAZ.Click += new System.EventHandler(this.btnTangAZ_Click);
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.lsvSanPham);
@@ -382,25 +404,15 @@
             this.columnHeader4.Text = "Đơn giá";
             this.columnHeader4.Width = 216;
             // 
-            // button1
+            // button3
             // 
-            this.button1.Location = new System.Drawing.Point(205, 327);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(172, 41);
-            this.button1.TabIndex = 22;
-            this.button1.Text = "GiaTang";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.btnGiaTang_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(29, 327);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(165, 43);
-            this.button2.TabIndex = 23;
-            this.button2.Text = "GiaGiam";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.btnGiaGiam_Click);
+            this.button3.Location = new System.Drawing.Point(456, 448);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(102, 42);
+            this.button3.TabIndex = 24;
+            this.button3.Text = "Hủy tìm";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.btnHuyTim_Click);
             // 
             // Form1
             // 
@@ -460,6 +472,7 @@
         private System.Windows.Forms.Button btnTimGia;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }
 

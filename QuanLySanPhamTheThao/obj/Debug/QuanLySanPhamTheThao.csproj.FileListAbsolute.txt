@@ -9,3 +9,14 @@ D:\c#\QuanLySanPhamTheThao\QuanLySanPhamTheThao\obj\Debug\QuanLySanPhamTheThao.c
 D:\c#\QuanLySanPhamTheThao\QuanLySanPhamTheThao\obj\Debug\QuanLySanPhamTheThao.csproj.CoreCompileInputs.cache
 D:\c#\QuanLySanPhamTheThao\QuanLySanPhamTheThao\obj\Debug\QuanLySanPhamTheThao.exe
 D:\c#\QuanLySanPhamTheThao\QuanLySanPhamTheThao\obj\Debug\QuanLySanPhamTheThao.pdb
+C:\Users\ASUS PC\Desktop\NguyenThiQuyenK54_QuanLySP\QuanLySanPhamTheThao\bin\Debug\QuanLySanPhamTheThao.exe.config
+C:\Users\ASUS PC\Desktop\NguyenThiQuyenK54_QuanLySP\QuanLySanPhamTheThao\bin\Debug\QuanLySanPhamTheThao.exe
+C:\Users\ASUS PC\Desktop\NguyenThiQuyenK54_QuanLySP\QuanLySanPhamTheThao\bin\Debug\QuanLySanPhamTheThao.pdb
+C:\Users\ASUS PC\Desktop\NguyenThiQuyenK54_QuanLySP\QuanLySanPhamTheThao\obj\Debug\QuanLySanPhamTheThao.csproj.AssemblyReference.cache
+C:\Users\ASUS PC\Desktop\NguyenThiQuyenK54_QuanLySP\QuanLySanPhamTheThao\obj\Debug\QuanLySanPhamTheThao.csproj.SuggestedBindingRedirects.cache
+C:\Users\ASUS PC\Desktop\NguyenThiQuyenK54_QuanLySP\QuanLySanPhamTheThao\obj\Debug\QuanLySanPhamTheThao.Form1.resources
+C:\Users\ASUS PC\Desktop\NguyenThiQuyenK54_QuanLySP\QuanLySanPhamTheThao\obj\Debug\QuanLySanPhamTheThao.Properties.Resources.resources
+C:\Users\ASUS PC\Desktop\NguyenThiQuyenK54_QuanLySP\QuanLySanPhamTheThao\obj\Debug\QuanLySanPhamTheThao.csproj.GenerateResource.cache
+C:\Users\ASUS PC\Desktop\NguyenThiQuyenK54_QuanLySP\QuanLySanPhamTheThao\obj\Debug\QuanLySanPhamTheThao.csproj.CoreCompileInputs.cache
+C:\Users\ASUS PC\Desktop\NguyenThiQuyenK54_QuanLySP\QuanLySanPhamTheThao\obj\Debug\QuanLySanPhamTheThao.exe
+C:\Users\ASUS PC\Desktop\NguyenThiQuyenK54_QuanLySP\QuanLySanPhamTheThao\obj\Debug\QuanLySanPhamTheThao.pdb
