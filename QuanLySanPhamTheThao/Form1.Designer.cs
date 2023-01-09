@@ -31,6 +31,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
@@ -62,7 +63,6 @@
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -121,6 +121,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin";
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(456, 469);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(102, 33);
+            this.button3.TabIndex = 24;
+            this.button3.Text = "Hủy tìm";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.btnHuyTim_Click);
+            // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(29, 327);
@@ -159,9 +169,9 @@
             // 
             // btnTimGia
             // 
-            this.btnTimGia.Location = new System.Drawing.Point(341, 501);
+            this.btnTimGia.Location = new System.Drawing.Point(341, 500);
             this.btnTimGia.Name = "btnTimGia";
-            this.btnTimGia.Size = new System.Drawing.Size(98, 30);
+            this.btnTimGia.Size = new System.Drawing.Size(98, 33);
             this.btnTimGia.TabIndex = 19;
             this.btnTimGia.Text = "Tìm";
             this.btnTimGia.UseVisualStyleBackColor = true;
@@ -187,7 +197,7 @@
             // 
             this.btnTimTen.Location = new System.Drawing.Point(341, 448);
             this.btnTimTen.Name = "btnTimTen";
-            this.btnTimTen.Size = new System.Drawing.Size(98, 30);
+            this.btnTimTen.Size = new System.Drawing.Size(98, 32);
             this.btnTimTen.TabIndex = 16;
             this.btnTimTen.Text = "Tìm";
             this.btnTimTen.UseVisualStyleBackColor = true;
@@ -204,7 +214,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 195);
+            this.label5.Location = new System.Drawing.Point(12, 210);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(79, 25);
             this.label5.TabIndex = 14;
@@ -298,6 +308,7 @@
             this.btnChen.Tag = "";
             this.btnChen.Text = "Chèn";
             this.btnChen.UseVisualStyleBackColor = true;
+            this.btnChen.Click += new System.EventHandler(this.btnChen_Click);
             // 
             // btnNhap
             // 
@@ -339,9 +350,9 @@
             // 
             // btnTangAZ
             // 
-            this.btnTangAZ.Location = new System.Drawing.Point(386, 325);
+            this.btnTangAZ.Location = new System.Drawing.Point(381, 327);
             this.btnTangAZ.Name = "btnTangAZ";
-            this.btnTangAZ.Size = new System.Drawing.Size(172, 43);
+            this.btnTangAZ.Size = new System.Drawing.Size(175, 43);
             this.btnTangAZ.TabIndex = 9;
             this.btnTangAZ.Tag = "";
             this.btnTangAZ.Text = "TangAZ";
@@ -403,16 +414,6 @@
             // 
             this.columnHeader4.Text = "Đơn giá";
             this.columnHeader4.Width = 216;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(456, 448);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(102, 42);
-            this.button3.TabIndex = 24;
-            this.button3.Text = "Hủy tìm";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.btnHuyTim_Click);
             // 
             // Form1
             // 
