@@ -158,7 +158,7 @@ namespace QuanLySanPhamTheThao
             for (i = 0; i < n; i++)
                 if (giaMax < DSSP[i].donGia)
                     giaMax = DSSP[i].donGia;
-            MessageBox.Show("Số lớn nhất là: " + giaMax.ToString(), "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Giá lớn nhất là: " + giaMax.ToString(), "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btnGiaMin_Click(object sender, EventArgs e)
@@ -173,7 +173,7 @@ namespace QuanLySanPhamTheThao
                 if (giaMin > DSSP[i].donGia)
                     giaMin = DSSP[i].donGia;
 
-            MessageBox.Show("Số nhỏ nhất là: " + giaMin.ToString(), "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Giá bé nhất là: " + giaMin.ToString(), "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btnTangAZ_Click(object sender, EventArgs e)

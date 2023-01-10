@@ -169,9 +169,9 @@
             // 
             // btnTimGia
             // 
-            this.btnTimGia.Location = new System.Drawing.Point(341, 500);
+            this.btnTimGia.Location = new System.Drawing.Point(341, 501);
             this.btnTimGia.Name = "btnTimGia";
-            this.btnTimGia.Size = new System.Drawing.Size(98, 33);
+            this.btnTimGia.Size = new System.Drawing.Size(98, 30);
             this.btnTimGia.TabIndex = 19;
             this.btnTimGia.Text = "Tìm";
             this.btnTimGia.UseVisualStyleBackColor = true;
@@ -197,7 +197,7 @@
             // 
             this.btnTimTen.Location = new System.Drawing.Point(341, 448);
             this.btnTimTen.Name = "btnTimTen";
-            this.btnTimTen.Size = new System.Drawing.Size(98, 32);
+            this.btnTimTen.Size = new System.Drawing.Size(98, 30);
             this.btnTimTen.TabIndex = 16;
             this.btnTimTen.Text = "Tìm";
             this.btnTimTen.UseVisualStyleBackColor = true;
@@ -251,7 +251,7 @@
             this.btnGiamAZ.Size = new System.Drawing.Size(198, 43);
             this.btnGiamAZ.TabIndex = 10;
             this.btnGiamAZ.Tag = "";
-            this.btnGiamAZ.Text = "Giảm dần theo tên";
+            this.btnGiamAZ.Text = "Sắp xếp Z - A";
             this.btnGiamAZ.UseVisualStyleBackColor = true;
             this.btnGiamAZ.Click += new System.EventHandler(this.btnGiamAZ_Click);
             // 
@@ -355,7 +355,7 @@
             this.btnTangAZ.Size = new System.Drawing.Size(198, 43);
             this.btnTangAZ.TabIndex = 9;
             this.btnTangAZ.Tag = "";
-            this.btnTangAZ.Text = "Tăng dần theo tên";
+            this.btnTangAZ.Text = "Sắp xếp A - Z";
             this.btnTangAZ.UseVisualStyleBackColor = true;
             this.btnTangAZ.Click += new System.EventHandler(this.btnTangAZ_Click);
             // 
@@ -380,6 +380,7 @@
             this.columnHeader4});
             this.lsvSanPham.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lsvSanPham.FullRowSelect = true;
+            this.lsvSanPham.GridLines = true;
             this.lsvSanPham.HideSelection = false;
             this.lsvSanPham.Location = new System.Drawing.Point(3, 26);
             this.lsvSanPham.Name = "lsvSanPham";
