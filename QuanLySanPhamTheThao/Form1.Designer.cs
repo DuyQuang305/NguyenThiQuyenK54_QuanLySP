@@ -116,7 +116,7 @@
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupBox1.Location = new System.Drawing.Point(0, 100);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(561, 575);
+            this.groupBox1.Size = new System.Drawing.Size(663, 575);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin";
@@ -133,21 +133,21 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(29, 327);
+            this.button2.Location = new System.Drawing.Point(29, 325);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(165, 43);
             this.button2.TabIndex = 23;
-            this.button2.Text = "GiaGiam";
+            this.button2.Text = "Giá giảm dần";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.btnGiaGiam_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(205, 327);
+            this.button1.Location = new System.Drawing.Point(234, 328);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(172, 41);
             this.button1.TabIndex = 22;
-            this.button1.Text = "GiaTang";
+            this.button1.Text = "Giá tăng dần";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.btnGiaTang_Click);
             // 
@@ -246,18 +246,18 @@
             // 
             // btnGiamAZ
             // 
-            this.btnGiamAZ.Location = new System.Drawing.Point(381, 384);
+            this.btnGiamAZ.Location = new System.Drawing.Point(444, 384);
             this.btnGiamAZ.Name = "btnGiamAZ";
-            this.btnGiamAZ.Size = new System.Drawing.Size(177, 43);
+            this.btnGiamAZ.Size = new System.Drawing.Size(198, 43);
             this.btnGiamAZ.TabIndex = 10;
             this.btnGiamAZ.Tag = "";
-            this.btnGiamAZ.Text = "GiamAZ";
+            this.btnGiamAZ.Text = "Giảm dần theo tên";
             this.btnGiamAZ.UseVisualStyleBackColor = true;
             this.btnGiamAZ.Click += new System.EventHandler(this.btnGiamAZ_Click);
             // 
             // btnGiaMin
             // 
-            this.btnGiaMin.Location = new System.Drawing.Point(205, 384);
+            this.btnGiaMin.Location = new System.Drawing.Point(234, 384);
             this.btnGiaMin.Name = "btnGiaMin";
             this.btnGiaMin.Size = new System.Drawing.Size(172, 43);
             this.btnGiaMin.TabIndex = 8;
@@ -279,7 +279,7 @@
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(421, 272);
+            this.btnXoa.Location = new System.Drawing.Point(512, 272);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(130, 44);
             this.btnXoa.TabIndex = 6;
@@ -290,7 +290,7 @@
             // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(285, 272);
+            this.btnSua.Location = new System.Drawing.Point(350, 272);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(130, 44);
             this.btnSua.TabIndex = 5;
@@ -301,7 +301,7 @@
             // 
             // btnChen
             // 
-            this.btnChen.Location = new System.Drawing.Point(157, 272);
+            this.btnChen.Location = new System.Drawing.Point(190, 272);
             this.btnChen.Name = "btnChen";
             this.btnChen.Size = new System.Drawing.Size(122, 44);
             this.btnChen.TabIndex = 4;
@@ -312,7 +312,7 @@
             // 
             // btnNhap
             // 
-            this.btnNhap.Location = new System.Drawing.Point(28, 272);
+            this.btnNhap.Location = new System.Drawing.Point(29, 272);
             this.btnNhap.Name = "btnNhap";
             this.btnNhap.Size = new System.Drawing.Size(122, 44);
             this.btnNhap.TabIndex = 3;
@@ -350,12 +350,12 @@
             // 
             // btnTangAZ
             // 
-            this.btnTangAZ.Location = new System.Drawing.Point(381, 327);
+            this.btnTangAZ.Location = new System.Drawing.Point(444, 326);
             this.btnTangAZ.Name = "btnTangAZ";
-            this.btnTangAZ.Size = new System.Drawing.Size(175, 43);
+            this.btnTangAZ.Size = new System.Drawing.Size(198, 43);
             this.btnTangAZ.TabIndex = 9;
             this.btnTangAZ.Tag = "";
-            this.btnTangAZ.Text = "TangAZ";
+            this.btnTangAZ.Text = "Tăng dần theo tên";
             this.btnTangAZ.UseVisualStyleBackColor = true;
             this.btnTangAZ.Click += new System.EventHandler(this.btnTangAZ_Click);
             // 
@@ -363,9 +363,9 @@
             // 
             this.groupBox2.Controls.Add(this.lsvSanPham);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox2.Location = new System.Drawing.Point(561, 100);
+            this.groupBox2.Location = new System.Drawing.Point(663, 100);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(583, 575);
+            this.groupBox2.Size = new System.Drawing.Size(481, 575);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Sản phẩm";
@@ -380,11 +380,10 @@
             this.columnHeader4});
             this.lsvSanPham.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lsvSanPham.FullRowSelect = true;
-            this.lsvSanPham.GridLines = true;
             this.lsvSanPham.HideSelection = false;
             this.lsvSanPham.Location = new System.Drawing.Point(3, 26);
             this.lsvSanPham.Name = "lsvSanPham";
-            this.lsvSanPham.Size = new System.Drawing.Size(577, 546);
+            this.lsvSanPham.Size = new System.Drawing.Size(475, 546);
             this.lsvSanPham.TabIndex = 0;
             this.lsvSanPham.UseCompatibleStateImageBehavior = false;
             this.lsvSanPham.View = System.Windows.Forms.View.Details;
@@ -393,22 +392,22 @@
             // columnHeader5
             // 
             this.columnHeader5.Text = "STT";
-            this.columnHeader5.Width = 79;
+            this.columnHeader5.Width = 57;
             // 
             // columnHeader1
             // 
             this.columnHeader1.Text = "Mã sp";
-            this.columnHeader1.Width = 88;
+            this.columnHeader1.Width = 73;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "Tên sản phẩm";
-            this.columnHeader2.Width = 176;
+            this.columnHeader2.Width = 153;
             // 
             // columnHeader3
             // 
             this.columnHeader3.Text = "Số lượng";
-            this.columnHeader3.Width = 128;
+            this.columnHeader3.Width = 101;
             // 
             // columnHeader4
             // 
@@ -465,7 +464,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.Button btnTimTen;
-        private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtTimTen;
         private System.Windows.Forms.Label label7;
@@ -474,6 +472,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
     }
 }
 
