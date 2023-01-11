@@ -24,7 +24,6 @@ namespace QuanLySanPhamTheThao
         }
 
         SANPHAM[] DSSP;
-        float[] Mang;
         int i = 0, n, STT;
         int viTriSua;
 
@@ -319,6 +318,14 @@ namespace QuanLySanPhamTheThao
                 item.SubItems.Add(DSSP[i].donGia.ToString());
                 lsvSanPham.Items.Add(item);
             }
+
+            txtMaSp.Clear();
+            txtTenSp.Clear();
+            txtSlSp.Clear();
+            txtGiaSp.Clear();
+
+            txtMaSp.Focus();
+
         } 
         private void btnNhap_Click(object sender, EventArgs e)
         {
@@ -353,7 +360,6 @@ namespace QuanLySanPhamTheThao
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Mang = new float[10];
             DSSP = new SANPHAM[10]; // Khởi tạo
             txtMaSp.Focus();
         }
