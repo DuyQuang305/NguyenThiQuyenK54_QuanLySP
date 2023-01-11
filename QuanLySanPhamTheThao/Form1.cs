@@ -276,7 +276,16 @@ namespace QuanLySanPhamTheThao
 
         private void btnChen_Click(object sender, EventArgs e)
         {
-            SANPHAM chen;          
+            SANPHAM chen, tam;
+            for (i = 0; i < n; i++)
+                for (int k = i + 1; k < n; k++)
+                    if (DSSP[i].donGia > DSSP[k].donGia)
+                    {
+                        tam = DSSP[i];
+                        DSSP[i] = DSSP[k];
+                        DSSP[k] = tam;
+                    }
+
             int viTri = 0; 
             chen.maSp = txtMaSp.Text;
             chen.tenSp = txtTenSp.Text;
